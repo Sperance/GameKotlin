@@ -1,6 +1,8 @@
 package ru.descend.gamekotlin
 
-abstract class Property(name: String, defaultValue: Int = 0, defaultPercent: Int = 0, defaultPrice: Int = 1){
+import java.io.Serializable
+
+abstract class Property(name: String, defaultValue: Int = 0, defaultPercent: Int = 0, defaultPrice: Int = 1) : Serializable{
     var propertyName: String = name
     var price: Int = defaultPrice
     var value: Int = defaultValue
