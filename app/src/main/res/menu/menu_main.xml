@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/fragmentMain"
+        android:icon="@drawable/ic_baseline_home"
+        android:title="Главная" />
+    <item
+        android:id="@+id/fragmentHero"
+        android:icon="@drawable/ic_baseline_account_circle"
+        android:title="Герой" />
+    <item
+        android:id="@+id/fragmentInventory"
+        android:icon="@drawable/ic_svg_inventory"
+        android:title="Инвентарь" />
+</menu>

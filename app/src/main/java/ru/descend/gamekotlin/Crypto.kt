@@ -1,6 +1,7 @@
 package ru.descend.gamekotlin
 
 import android.util.Base64
+import ru.descend.dellib.log
 import javax.crypto.Cipher
 import javax.crypto.SecretKeyFactory
 import javax.crypto.spec.IvParameterSpec

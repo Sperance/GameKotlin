@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/fragmentAuthorization">
+
+    <fragment
+        android:id="@+id/fragmentAuthorization"
+        android:name="ru.descend.gamekotlin.fragments.FragmentAuthorization"
+        android:label="Авторизация">
+        <action
+            android:id="@+id/action_fragmentAuthorization_to_fragmentMain"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/fragmentAuthorization"
+            app:destination="@id/fragmentMain" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentMain"
+        android:name="ru.descend.gamekotlin.fragments.FragmentMain"
+        android:label="Главное меню">
+        <action
+            android:id="@+id/action_fragmentMain_to_fragmentShops"
+            app:destination="@id/fragmentShops" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentHero"
+        android:name="ru.descend.gamekotlin.fragments.FragmentHero"
+        android:label="Герой" />
+    <fragment
+        android:id="@+id/fragmentShops"
+        android:name="ru.descend.gamekotlin.fragments.FragmentShops"
+        android:label="Магазины"
+        tools:layout="@layout/fragment_shops" />
+    <fragment
+        android:id="@+id/fragmentInventory"
+        android:name="ru.descend.gamekotlin.fragments.FragmentInventory"
+        android:label="Инвентарь"
+        tools:layout="@layout/fragment_inventory" />
+</navigation>

@@ -1,6 +1,8 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'com.google.gms.google-services'
+    id 'androidx.navigation.safeargs'
 }
 
 android {
@@ -11,7 +13,7 @@ android {
         minSdk 26
         targetSdk 31
         versionCode 1
-        versionName "1.0"
+        versionName "0.0.1"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -29,6 +31,10 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    buildFeatures {
+        viewBinding true
+    }
+    namespace 'ru.descend.gamekotlin'
 }
 
 dependencies {
@@ -43,4 +49,36 @@ dependencies {
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.1"
     implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.4.1"
 
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.4.1'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.1'
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.4.2'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.4.2'
+
+    //Coroutines
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.1'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.1'
+
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.firebase:firebase-auth-ktx:21.0.4'
+    implementation 'com.google.android.gms:play-services-auth:20.2.0'
+
+    //viewbinding
+    implementation 'com.github.yogacp:android-viewbinding:1.0.3'
+
+    //MaterialSpinner
+    implementation 'com.github.tiper:MaterialSpinner:1.4.2'
+
+    //Coil
+    implementation "io.coil-kt:coil:1.4.0"
+
+    //RecyclerViewIndicator
+    implementation 'com.github.rbro112:Android-Indefinite-Pager-Indicator:1.4'
+
+    //BottomSheets
+    implementation 'com.github.andrefrsousa:SuperBottomSheet:2.0.0'
+
+    implementation 'com.github.cachapa:ExpandableLayout:2.9.2'
+    implementation 'com.google.firebase:firebase-firestore-ktx:24.1.2'
+    implementation 'com.google.firebase:firebase-storage-ktx:20.0.1'
+    implementation project(path: ':dellib')
 }

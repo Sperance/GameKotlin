@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "843405437006",
+    "project_id": "descend-gamekotlin",
+    "storage_bucket": "descend-gamekotlin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:843405437006:android:5b2bba3d284e3ffdc2fb1f",
+        "android_client_info": {
+          "package_name": "ru.descend.gamekotlin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "843405437006-125ol38ok0n0nagof3a39sptrfadiob9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBoVEWMoGosWIMHvbgyy8Ilgp7f0zNT7ME"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "843405437006-125ol38ok0n0nagof3a39sptrfadiob9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
